@@ -9,7 +9,7 @@ public class ApiClient {
     public static Retrofit getClient() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://<your_server_ip>:5000/")
+                    .baseUrl("http://127.0.0.1:5000")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
